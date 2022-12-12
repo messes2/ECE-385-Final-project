@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Sat Dec 10 15:19:50 2022
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : Lab6b
+Top-level Entity Name : motionsynth
+Family : MAX 10
+Total logic elements : 6,928
+    Total combinational functions : 5,687
+    Dedicated logic registers : 3,385
+Total registers : 3385
+Total pins : 141
+Total virtual pins : 0
+Total memory bits : 25,112
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1
+UFM blocks : 0
+ADC blocks : 0
