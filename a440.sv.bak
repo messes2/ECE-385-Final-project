@@ -1,0 +1,27 @@
+module  a440
+(
+		input Clk,
+
+		output logic [7:0] data_Out
+);
+logic [7:0] read_address;
+// mem has width of 3 bits and a total of 400 addresses
+logic [7:0] mem [100];
+
+initial
+begin
+	 $readmemh("440a.hex", mem);
+end
+
+
+always_ff @ (posedge Clk) begin
+//	if (we)
+//		mem[write_address] <= data_In;
+	data_Out<= mem[read_address];
+	read_address<=read_address+1;
+	if (read_address==100)
+		begin
+			read_address<=0;
+		end
+end
+endmodule

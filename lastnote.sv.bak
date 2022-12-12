@@ -1,0 +1,15 @@
+module noteenable(
+	input Clk,
+	inout [3:0] enable,
+	input [3:0] lastcase)
+	always_ff @(posedge CLK)
+		begin: case_process
+ 
+			case (lastcase)
+				4'b0000 : enable = 4'b0001;
+				4'b0001 : enable = 4'b0010;
+				4'b0010 : enable = 4'b0001;
+			default : enable = 4'b0000;
+			endcase
+		end
+endmodule

@@ -1,0 +1,82 @@
+module notelight(
+					input Clk,
+					input [7:0] keycod,
+					input [7:0] keycod1,
+					output [7:0] noteled);
+					always_comb
+					begin
+					case (keycod1)
+					8'h61 : begin
+					case (keycod)
+					8'h61 : begin
+								noteled=8'a4;
+							  end
+					        
+					8'h64 : begin
+								
+								noteled=8'b4;
+							  end
+			
+					8'h77 : begin
+
+								noteled=8'c5;
+							 end
+							  
+					8'h78 : begin
+								noteled=8'd5;
+							 end	
+							 end
+					8'h65 : begin
+								noteled=8'e5;
+							  end
+					8'h71 : begin
+								noteled=8'f5;
+							  end
+					8'h63 : begin
+								noteled=8'95;
+							  end
+					8'h7A : begin
+								noteled=8'a5;
+							  end
+					default: dater=32'b0;
+			   endcase
+				end
+					8'h64 : begin
+					case (keycod)
+					8'h61 : begin
+								noteled=8'94;
+							  end
+					        
+					8'h64 : begin
+								
+								noteled=8'f4;
+							  end
+			
+					8'h77 : begin
+
+								noteled=8'e4;
+							 end
+							  
+					8'h78 : begin
+								noteled=8'd4;
+							 end	
+					        
+					8'h65 : begin
+								noteled=8'c4;
+							  end
+					8'h71 : begin
+								noteled=8'b3;
+							  end
+					8'h63 : begin
+								noteled=8'a3;
+							  end
+					8'h7A : begin
+								noteled=8'93;
+							  end
+					default: dater=32'b0;
+			   endcase
+				end 
+				default: dater=32'b0;
+				endcase
+				end
+endmodule
