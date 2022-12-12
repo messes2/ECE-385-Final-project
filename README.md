@@ -11,7 +11,7 @@ Order to go in for implementation while running is
 
 1. Complete partial program setup shown in readme.PDF
 
-2. JTAG Programmer
+2. JTAG Programmer for Lab6b.sof
 
 3. Nios ii Eclipse Flash programming
 
