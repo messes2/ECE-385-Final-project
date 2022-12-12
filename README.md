@@ -9,13 +9,13 @@ Read the pdf to figure out more of the stuff
 
 Order to go in for implementation while running is
 
-1. Complete partial program setup shown in PDF
+1. Complete partial program setup shown in readme.PDF
 
 2. JTAG Programmer
 
-3.Nios ii Eclipse Flash programming
+3. Nios ii Eclipse Flash programming
 
-4.End the JTAG connection with Eclipse
+4. End the JTAG connection with Eclipse
 
 5. Run windowactivation.py
 
