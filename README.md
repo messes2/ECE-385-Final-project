@@ -1,5 +1,5 @@
 # ECE-385-Final-project
-I made a motion controlled digital synthesizer known as a puppeteer theremin on fpga for my ece 385 final project with full onboard audio processing.
+I made a motion controlled digital synthesizer known as a puppeteer theremin with full onboard audio processing that uses AI to get motion control data from two different lan network servers hosted on two different android phones onto an FPGA to which control the note and the pitch.
 
 This project has a lot of moving parts (Motion source, PadTest, Tesseract, eclipse, Audacity, Visual studio code, window switching, Quartus), which can be very overwhelming to deal with. Because of this the readme is broken into parts, external software, custom software, hardware, then implementation. Please note the phone can only be Android OS and the computer being used must be Windows OS. Nothing else will work.
 
