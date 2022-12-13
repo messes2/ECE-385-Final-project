@@ -1,17 +1,3 @@
-//-------------------------------------------------------------------------
-//    Ball.sv                                                            --
-//    Viral Mehta                                                        --
-//    Spring 2005                                                        --
-//                                                                       --
-//    Modified by Stephen Kempf 03-01-2006                               --
-//                              03-12-2007                               --
-//    Translated by Joe Meng    07-07-2013                               --
-//    Fall 2014 Distribution                                             --
-//                                                                       --
-//    For use with ECE 298 Lab 7                                         --
-//    UIUC ECE Department                                                --
-//-------------------------------------------------------------------------
-
 
 module  ball ( input Reset, frame_clk,
 					input [7:0] keycod,
@@ -125,15 +111,7 @@ module  ball ( input Reset, frame_clk,
 				 Ball_Y_Pos <= (Ball_Y_Pos + Ball_Y_Motion);  // Update ball position
 				 Ball_X_Pos <= (Ball_X_Pos + Ball_X_Motion);
 			
-			
-	  /**************************************************************************************
-	    ATTENTION! Please answer the following quesiton in your lab report! Points will be allocated for the answers!
-		 Hidden Question #2/2:
-          Note that Ball_Y_Motion in the above statement may have been changed at the same clock edge
-          that is causing the assignment of Ball_Y_pos.  Will the new value of Ball_Y_Motion be used,
-          or the old?  How will this impact behavior of the ball during a bounce, and how might that 
-          interact with a response to a keypress?  Can you fix it?  Give an answer in your Post-Lab.
-      **************************************************************************************/
+
       
 			
 		end  
