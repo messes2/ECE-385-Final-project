@@ -7,7 +7,6 @@ module  a440
 		inout wire fsmcontrol
 );
 logic [7:0] read_address;
-// mem has width of 3 bits and a total of 400 addresses
 logic [7:0] mem [100];
 logic [31:0] loopcount;
 initial
@@ -18,8 +17,6 @@ initial
 
 always_ff @ (posedge Clk)
 	begin
-//	if (we)
-//		mem[write_address] <= data_In;
 				data_Out<= mem[read_address];//read 8bitwords
 				read_address<=read_address+1;//go to next word
 				if (read_address==100)//if on the last word, break
