@@ -1,6 +1,6 @@
 //-------------------------------------------------------------------------
 //                                                                       --
-//                                                                       --
+//      Edited by Matthew Esses                                          --
 //      For use with ECE 385 Lab 62                                       --
 //      UIUC ECE Department                                              --
 //-------------------------------------------------------------------------
@@ -181,7 +181,7 @@ logic jtag_R_pulse;
 	wire [7:0] ramdater18;
 	logic SCLK, LRCLK, dout;
 	wire f;
-	wire [3:0] case; 
+	wire [3:0] lastcase; 
 	wire [3:0] enable;
 	g196 g3(.Clk(SCLK), .data_Out(ramdater18), .enable(enable), .enableout(lastcase), .fsmcontrol(f));
 	a220 a3(.Clk(SCLK), .data_Out(ramdater17), .enable(enable), .enableout(lastcase), .fsmcontrol(f));
